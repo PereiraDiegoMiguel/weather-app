@@ -11,18 +11,33 @@ const Search = ({ getQuery }) => {
   }
 
   return (
-    <section className='search'>
-      <form>
-        <h1>Hello</h1>
-        <select type="text"
-          className='form-control'
-          placeholder='Search characters'
-          value={text}
-          onChange={(event) => onChange(event.target.value)}
-          autoFocus
-        />
-      </form>
-    </section>
+
+    <form className="form_content">
+      <div className="data">
+        <div>
+          <label className="label" htmlFor="estado">Estado</label>
+          <select type="text"
+            className='form-control'
+            placeholder='Estado'
+            value={text}
+            onChange={(event) => onChange(event.target.value)}
+            autoFocus
+          />
+        </div>
+
+        <div>
+          <label className="label" htmlFor="estado">Cidade</label>
+          <select type="text"
+            className='form-control'
+            placeholder='Cidade'
+            value={text}
+            onChange={(event) => onChange(event.target.value)}
+
+          />
+        </div>
+      </div>
+
+    </form>
 
   )
 }
